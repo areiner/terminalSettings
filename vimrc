@@ -6,6 +6,10 @@ vnoremap jk <Esc>
 vnoremap kj <Esc>
 " allow some mouse input
 set mouse=a
+" syntax highlighting
+syntax enable
+set background=dark
+colorscheme solarized
 " line numbering and line wrapping
 set nu
 set lbr
@@ -13,4 +17,5 @@ set lbr
 syntax on
 " show cursor position all the time
 set ruler
-
+" allow copy to clipboard
+set clipboard+=unnamed
