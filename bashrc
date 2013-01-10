@@ -25,9 +25,10 @@ alias du1='du -hd 1'
 alias du0='du -hd 0'
 
 # aliases for ls
+alias ls='ls -F'
 alias ll='ls -lhF'
-alias la='ls -ahF'
-alias lla='ls -alhF'
+alias la='ls -AhF'
+alias lla='ls -AlhF'
 alias lt='ls -tlhF'
 
 #macOS trash instead of rm
