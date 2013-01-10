@@ -13,7 +13,7 @@ export PROMPT_COMMAND='history -a'
 # custom command prompt that shows date time user host, file path, and git branch
 if [ $TERM = 'dumb' ] ; then
   #no color :-(
-  export PS1="\d \t \u@\h:\e\w\e\n$"
+  export PS1="\d \t \u@\h:\e\w\e\$(parse_git_branch)\n$"
 else
   export PS1="\d \t \u@\h:\e[0;34m\w\e[m \$(parse_git_branch)\n$"
 fi
