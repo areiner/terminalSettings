@@ -18,11 +18,17 @@ else
   export PS1="\d \t \u@\h:\e[0;34m\w\e[m \$(parse_git_branch)\n$"
 fi
 
-# aliases for ls
-alias ll='ls -lh'
-alias la='ls -alh'
-alias du0='du -hd 0'
+# aliases for the ususal commands
+alias mv='mv -vi'
+alias cd..='cd ..'
 alias du1='du -hd 1'
+alias du0='du -hd 0'
+
+# aliases for ls
+alias ll='ls -lhF'
+alias la='ls -ahF'
+alias lla='ls -alhF'
+alias lt='ls -tlhF'
 
 #macOS trash instead of rm
 function trash {
