@@ -36,17 +36,6 @@ if [ $(uname) = 'Linux' ]; then . $HOME/.bash/bashrc.linux; fi
 # GNU/Linux-specific settings
 if [ $(uname) = 'Darwin' ]; then . $HOME/.bash/bashrc.darwin; fi
 
-#macOS trash instead of rm
-function trash {
-    for filename; do
-        if [ -e $HOME/.Trash/$filename ]; then
-            mv "${filename}" "${HOME}/.Trash/${filename}$(date +%Y%m%d%H%M%S)"
-        else
-            mv "${filename}" "${HOME}/.Trash"
-        fi
-    done
-}
-
 # function to identify and name branches for git
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(git::\1)/'
