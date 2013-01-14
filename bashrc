@@ -20,6 +20,7 @@ fi
 
 # aliases for the ususal commands
 alias mv='mv -vi'
+alias rm='rm -v'
 alias cd..='cd ..'
 
 # aliases for ls
