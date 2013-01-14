@@ -1,0 +1,7 @@
+# aliases for shutdown
+alias shutdown='sudo shutdown -h now'
+alias restart='sudo shutdown -r now'
+
+# alias to show size of current directory (and subdirectories)
+alias du0='du -h --max-depth=0'
+alias du1='du -h --max-depth=1'

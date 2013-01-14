@@ -21,8 +21,6 @@ fi
 # aliases for the ususal commands
 alias mv='mv -vi'
 alias cd..='cd ..'
-alias du1='du -hd 1'
-alias du0='du -hd 0'
 
 # aliases for ls
 alias ls='ls -F'
@@ -30,6 +28,12 @@ alias ll='ls -lhF'
 alias la='ls -AhF'
 alias lla='ls -AlhF'
 alias lt='ls -tlhF'
+
+# GNU/Linux-specific settings
+if [ $(uname) = 'Linux' ]; then . $HOME/.bash/bashrc.linux; fi
+
+# GNU/Linux-specific settings
+if [ $(uname) = 'Darwin' ]; then . $HOME/.bash/bashrc.darwin; fi
 
 #macOS trash instead of rm
 function trash {

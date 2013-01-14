@@ -1,0 +1,14 @@
+#macOS trash instead of rm
+function trash {
+    for filename; do
+        if [ -e $HOME/.Trash/$filename ]; then
+            mv "${filename}" "${HOME}/.Trash/${filename}$(date +%Y%m%d%H%M%S)"
+        else
+            mv "${filename}" "${HOME}/.Trash"
+        fi
+    done
+}
+
+# list size of current directory (and all sub-directories)
+alias du0='du -hd 0'
+alias du1='du -hd 1'
