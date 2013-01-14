@@ -30,10 +30,10 @@ alias la='ls -AhF'
 alias lla='ls -AlhF'
 alias lt='ls -tlhF'
 
-# GNU/Linux-specific settings
+# Linux-specific settings
 if [ $(uname) = 'Linux' ]; then . $HOME/.bash/bashrc.linux; fi
 
-# GNU/Linux-specific settings
+# Mac/Darwin-specific settings
 if [ $(uname) = 'Darwin' ]; then . $HOME/.bash/bashrc.darwin; fi
 
 # function to identify and name branches for git
