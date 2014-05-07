@@ -30,6 +30,9 @@ alias la='ls -AhF'
 alias lla='ls -AlhF'
 alias lt='ls -tlhF'
 
+# aliases for git commands
+alias diffy="git diff | subl &"
+
 # Linux-specific settings
 if [ $(uname) = 'Linux' ]; then . $HOME/.bash/bashrc.linux; fi
 
